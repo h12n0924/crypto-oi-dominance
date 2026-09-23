@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-23T17:56:35.997069+00:00",
+  "generated_at": "2026-09-23T22:47:19.115840+00:00",
   "from": "2021-12-01",
   "to": "2026-09-22",
-  "requested_from": "2026-09-17",
+  "requested_from": "2026-09-20",
   "requested_to": "2026-09-22",
   "incremental_merge": true,
   "observations": 1757,
