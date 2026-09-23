@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-09-23T17:56:36.089Z",
+  "from": "2021-12-01",
+  "to": "2026-09-22",
+  "observations": 1757,
+  "switch_date": "2022-07-30",
+  "source_observations": {
+    "binance_bybit_fixed_venues": 241,
+    "coinalyze_current_universe": 1516
+  },
+  "validation": {
+    "date_gap_count": 0,
+    "negative_oi_row_count": 0,
+    "missing_btc_price_row_count": 0,
+    "max_percentage_sum_error": 1.0000007932831068e-8
+  },
+  "overlap_from": "2022-07-30",
+  "overlap_to": "2022-08-31",
+  "overlap_days": 33,
+  "overlap_difference_early_venues_minus_coinalyze_pp": {
+    "btc": {
+      "mean_signed_pp": -2.8505253,
+      "mean_absolute_pp": 2.8505253,
+      "max_absolute_pp": 5.13899103
+    },
+    "eth": {
+      "mean_signed_pp": -1.95599133,
+      "mean_absolute_pp": 1.95599133,
+      "max_absolute_pp": 3.67765048
+    },
+    "others": {
+      "mean_signed_pp": 4.80651663,
+      "mean_absolute_pp": 4.80651663,
+      "max_absolute_pp": 6.07580458
+    }
+  },
+  "early_venues": [
+    "Binance USD-M/COIN-M",
+    "Bybit linear/inverse"
+  ],
+  "btc_price_source": "Binance BTCUSDT spot daily close (UTC)",
+  "warning": "2021-12 至口径切换日前覆盖 Binance 与 Bybit，不等同于 Coinalyze 全市场；切换处仍可能存在结构性跳变。"
+}

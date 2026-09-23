@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-09-08T09:22:12.899143+00:00",
+  "from": "2021-12-01",
+  "to": "2022-08-31",
+  "observations": 57588,
+  "days": 274,
+  "failure_count": 0,
+  "first": {
+    "date": "2021-12-01",
+    "all_oi_usd": 15739786128.25,
+    "btc_oi_usd": 5977382545.46,
+    "eth_oi_usd": 2886316657.82,
+    "others_oi_usd": 6876086924.97,
+    "btc_pct": 37.97626281,
+    "eth_pct": 18.33771205,
+    "others_pct": 43.68602514,
+    "market_count": 184,
+    "unverified_checksums": 0,
+    "max_stale_minutes": 4.98
+  },
+  "last": {
+    "date": "2022-08-31",
+    "all_oi_usd": 7974535855.72,
+    "btc_oi_usd": 3083545398.46,
+    "eth_oi_usd": 2240338713.41,
+    "others_oi_usd": 2650651743.85,
+    "btc_pct": 38.6673965,
+    "eth_pct": 28.09365653,
+    "others_pct": 33.23894697,
+    "market_count": 236,
+    "unverified_checksums": 0,
+    "max_stale_minutes": 4.98
+  },
+  "limitations": [
+    "Binance-only fixed-venue series; not Coinalyze global dominance",
+    "Archive gaps are retained as missing observations and recorded in SQLite",
+    "COIN-M USD value uses the closest 5-minute mark price"
+  ]
+}

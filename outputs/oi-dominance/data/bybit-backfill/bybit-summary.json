@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-09-08T11:13:09.774017+00:00",
+  "from": "2021-12-01",
+  "to": "2022-08-31",
+  "discovered_instruments": 888,
+  "eligible_instruments": 132,
+  "symbol_day_observations": 29710,
+  "days": 274,
+  "failures": 0,
+  "oi_definition": "Bybit reported openInterest (sum of both sides, matching Coinalyze); linear contracts converted with same-timestamp daily kline open; inverse contracts already USD",
+  "limitation": "Current Bybit instrument directory; delisted historical contracts may be missing"
+}

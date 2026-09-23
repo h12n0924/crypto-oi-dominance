@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-09-23T17:56:32.840Z",
+  "from": "2024-09-08",
+  "to": "2026-09-22",
+  "requested_from": "2026-09-17",
+  "requested_to": "2026-09-22",
+  "incremental_merge": true,
+  "retained_existing_observations": 739,
+  "interval": "daily",
+  "partial": false,
+  "requested_assets": null,
+  "requested_symbols": null,
+  "max_symbols": null,
+  "current_future_market_count": 5461,
+  "eligible_current_market_count": 5079,
+  "eligible_market_count_before_test_limit": 5079,
+  "processed_market_count": 5079,
+  "exchange_count": 15,
+  "excluded_classification_snapshot": "2026-09-08",
+  "excluded_configured_asset_count": 148,
+  "excluded_present_market_count": 824,
+  "excluded_symbol_exemptions": [
+    "PURR.H"
+  ],
+  "historical_universe_filter_date": null,
+  "historical_universe_seed_cache": null,
+  "observations": 745,
+  "latest": {
+    "date": "2026-09-22",
+    "timestamp": 1790035200,
+    "all_oi_usd": 75622285665.98,
+    "excluded_oi_usd": 3486648095.91,
+    "crypto_oi_usd": 72135637570.07,
+    "btc_oi_usd": 28488611958.77,
+    "eth_oi_usd": 15889469060.47,
+    "others_oi_usd": 27757556550.84,
+    "raw_btc_pct": 37.67224398,
+    "raw_eth_pct": 21.01162233,
+    "raw_others_pct": 41.31613369,
+    "excluded_oi_pct": 4.61060925,
+    "btc_pct": 39.4931173,
+    "eth_pct": 22.02721095,
+    "others_pct": 38.47967175
+  },
+  "limitations": [
+    "future-markets is a current universe; delisted historical contracts may be missing",
+    "tokenized-stock classification is a point-in-time snapshot and needs periodic review",
+    "Others is a residual category"
+  ]
+}

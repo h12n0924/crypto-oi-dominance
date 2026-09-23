@@ -1,0 +1,59 @@
+name: Daily OI data update
+
+on:
+  schedule:
+    - cron: "20 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: oi-dominance-data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh the latest completed UTC day
+        shell: pwsh
+        env:
+          COINALYZE_API_KEY: ${{ secrets.COINALYZE_API_KEY }}
+        run: ./outputs/oi-dominance/daily-update.ps1 -NonInteractive
+
+      - name: Save refreshed history
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            outputs/oi-dominance/data/dominance-cleaned.csv \
+            outputs/oi-dominance/data/dominance-cleaned.html \
+            outputs/oi-dominance/data/summary.json \
+            outputs/oi-dominance/data/excluded-underlyings.csv \
+            outputs/oi-dominance/data/dominance-2021plus.csv \
+            outputs/oi-dominance/data/dominance-2021plus.html \
+            outputs/oi-dominance/data/dominance-2021plus-summary.json \
+            outputs/oi-dominance/data/daily-update-status.json \
+            outputs/oi-dominance/data/btc-price/btc-price-daily.csv \
+            outputs/oi-dominance/data/btc-price/summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: update OI dominance through $(date -u +%F)"
+            git push
+          fi
+

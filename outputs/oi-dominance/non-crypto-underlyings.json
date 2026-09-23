@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-09-08",
+  "classification": "tokenized_stock",
+  "source": "https://coinalyze.net/category-tokenized_stock/open-interest/",
+  "note": "Current Coinalyze Tokenized stock constituents. Review periodically; symbols can be added, removed, or reused.",
+  "exempt_symbols": [
+    "PURR.H"
+  ],
+  "base_assets": [
+    "AAOI", "AAPL", "AAPLX", "ADBE", "ALAB", "AMAT", "AMD", "AMZN", "AMZNX", "ANTHROPIC",
+    "APP", "ARM", "ASML", "ASTS", "AVGO", "AXTI", "BABA", "BE", "BMNR", "BNC",
+    "BOT", "BRKB", "BSP", "BX", "CBRS", "CIEN", "COHR", "COIN", "COINX", "CRCL",
+    "CRCLX", "CRDO", "CRM", "CRWD", "CSCO", "CXMT", "DELL", "DIS", "DKNG", "EBAY",
+    "FLNC", "FUTU", "FWDI", "GEV", "GIGADEV", "GLW", "GME", "GOOGL", "GOOGLX",
+    "GS", "HANMI", "HD", "HIMS", "HOOD", "HOODX", "HPE", "HYUNDAI", "IBM", "INFQ",
+    "INTC", "INTCX", "INTW", "IREN", "JPM", "KIOXIA", "KLAC", "KO", "KORU", "KUAISHOU",
+    "LGELECTRONICS", "LITE", "LLY", "LRCX", "LUNR", "MEITUAN", "META", "METAX", "MINIMAX", "MRNA", "MRVL",
+    "MSTR", "MSTRX", "MSFT", "MU", "MVLL", "NAVER", "NBIS", "NFLX", "NOK", "NOW",
+    "NVDA", "NVDAX", "NVO", "ONDS", "OPENAI", "ORCL", "PANW", "PAYP", "PDD", "PENG",
+    "PLTR", "PLTRX", "POPMART", "PURR", "PYPL", "QCOM", "QNTX", "RDDT", "RDW", "RIVN",
+    "RKLB", "ROK", "SAMSUNG", "SAMSUNGEM", "SHAZ", "SKHYNIX", "SMCI", "SNDK", "SNOW", "SNXX",
+    "SOFI", "SOFTBANK", "SONY", "SOXS", "SPCX", "SQQQ", "STRC", "TENCENT", "TQQQ", "TSLA",
+    "TSLAX", "TSM", "TTWO", "TWLO", "TZA", "UBER", "UNITREE", "UVXY", "V", "VRT",
+    "WDC", "WEN", "WMT", "XBI", "XIAOMI", "ZHIPU", "ZHONGJI", "ZM"
+  ]
+}

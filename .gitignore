@@ -1,0 +1,33 @@
+# Secrets and local credentials
+*.dpapi
+.env
+.env.*
+
+# Runtime caches and locks
+**/.cache/
+**/__pycache__/
+*.pyc
+*.sqlite
+*.zip
+*.log
+*.err.log
+**/.run.lock
+
+# Large/disposable discovery output
+outputs/oi-dominance/data/future-markets.json
+outputs/oi-dominance/data/dominance-2021plus-preview.png
+outputs/oi-dominance/data/oi-dominance-2021plus.xlsx
+outputs/oi-dominance/data/bybit-backfill-2021-early/
+outputs/oi-dominance/data/binance-backfill/binance-daily-by-symbol.csv
+outputs/oi-dominance/data/bybit-backfill/bybit-daily-by-symbol.csv
+outputs/oi-dominance/data/coinalyze-early/dominance-cleaned.html
+outputs/oi-dominance/data/coinalyze-early/excluded-underlyings.csv
+outputs/oi-dominance/data/coinalyze-early/future-markets.json
+
+# Generated publication and one-off exports
+site/
+outputs/oi-dominance-export-*/
+
+# Local working files
+work/
+
