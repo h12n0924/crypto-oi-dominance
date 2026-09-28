@@ -1,8 +1,8 @@
 {
-  "completed_at": "2026-09-27T07:36:08.9160548Z",
-  "target_date": "2026-09-26",
-  "latest_observation": "2026-09-26",
-  "observations": 1761,
+  "completed_at": "2026-09-28T07:42:48.6269869Z",
+  "target_date": "2026-09-27",
+  "latest_observation": "2026-09-27",
+  "observations": 1762,
   "date_gap_count": 0,
   "missing_btc_price_row_count": 0
 }
