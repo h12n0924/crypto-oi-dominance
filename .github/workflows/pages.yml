@@ -9,6 +9,9 @@ on:
       - "outputs/oi-dominance/export-xlsx.py"
       - "outputs/oi-dominance/publish-site.mjs"
       - "outputs/oi-dominance/requirements.txt"
+  workflow_run:
+    workflows: ["Daily OI data update"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -22,10 +25,14 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Set up Node.js
         uses: actions/setup-node@v4

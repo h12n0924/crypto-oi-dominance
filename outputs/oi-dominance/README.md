@@ -71,7 +71,7 @@ node .\combine-2021plus.mjs
 
 ## GitHub Pages 云端日更
 
-仓库内的 `.github/workflows/daily-update.yml` 会在每天 `00:20 UTC`（北京时间 08:20）启动完整更新；数据提交后，`.github/workflows/pages.yml` 会自动发布。云端需要：
+仓库内的 `.github/workflows/daily-update.yml` 会在每天 `00:20 UTC`（北京时间 08:20）启动完整更新；日更工作流成功完成后，`.github/workflows/pages.yml` 会通过 `workflow_run` 自动发布。这里不能只依赖数据 commit 的 `push` 事件，因为由仓库 `GITHUB_TOKEN` 推送的 commit 不会触发另一个工作流。云端需要：
 
 1. 在 GitHub 仓库 Actions secrets 中配置 `COINALYZE_API_KEY`；
 2. 在 Settings > Pages 中把发布来源设为 GitHub Actions；

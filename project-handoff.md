@@ -9,7 +9,7 @@ Publish a mobile-friendly, public OI dominance chart that updates every day with
 - GitHub Actions starts daily at 00:20 UTC (08:20 Asia/Shanghai).
 - `outputs/oi-dominance/daily-update.ps1` refreshes the latest completed UTC day from Coinalyze and Binance Data Vision.
 - `.github/workflows/daily-update.yml` validates freshness and continuity, then commits refreshed source outputs.
-- The data commit triggers `.github/workflows/pages.yml`, which rebuilds the downloadable Excel workbook and static GitHub Pages payload.
+- Completion of a successful `Daily OI data update` run triggers `.github/workflows/pages.yml` via `workflow_run`, which checks out the refreshed `main` branch and rebuilds the downloadable Excel workbook and static GitHub Pages payload. This explicit workflow chain is required because pushes made with the repository `GITHUB_TOKEN` do not trigger another workflow.
 - Splitting update and publication lets the initial push publish existing validated data immediately and preserves the last good site when an API update fails.
 
 ## Required GitHub configuration
