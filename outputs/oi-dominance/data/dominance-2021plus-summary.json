@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-03T07:35:55.547Z",
+  "generated_at": "2026-10-04T08:10:50.707Z",
   "from": "2021-12-01",
-  "to": "2026-10-02",
-  "observations": 1767,
+  "to": "2026-10-03",
+  "observations": 1768,
   "switch_date": "2022-07-30",
   "source_observations": {
     "binance_bybit_fixed_venues": 241,
-    "coinalyze_current_universe": 1526
+    "coinalyze_current_universe": 1527
   },
   "validation": {
     "date_gap_count": 0,
