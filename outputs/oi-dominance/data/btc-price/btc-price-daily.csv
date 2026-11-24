@@ -1817,3 +1817,4 @@ date,btc_price_usd,source_url,checksum_ok
 2026-11-20,58951.51,https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-11-20.zip,True
 2026-11-21,60215.77,https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-11-21.zip,True
 2026-11-22,61271.08,https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-11-22.zip,True
+2026-11-23,61270.93,https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-11-23.zip,True
