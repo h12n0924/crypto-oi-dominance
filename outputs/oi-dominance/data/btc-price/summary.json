@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-26T10:46:15.463460+00:00",
+  "generated_at": "2026-11-27T10:56:41.302465+00:00",
   "from": "2021-12-01",
-  "to": "2026-11-25",
-  "requested_from": "2026-11-22",
-  "requested_to": "2026-11-25",
+  "to": "2026-11-26",
+  "requested_from": "2026-11-23",
+  "requested_to": "2026-11-26",
   "incremental_merge": true,
-  "observations": 1821,
+  "observations": 1822,
   "price_definition": "Binance BTCUSDT spot daily close (UTC)",
   "unverified_checksums": 0
 }
